@@ -9,3 +9,4 @@ C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-R
 C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\refint\NatureAPI.Models.dll
 C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.pdb
 C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\ref\NatureAPI.Models.dll
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.sourcelink.json
