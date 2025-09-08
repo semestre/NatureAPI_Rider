@@ -111,5 +111,22 @@ public class NatureDBContext : DbContext
             new Amenity { Id = 4, Name = "Viewpoint" },
             new Amenity { Id = 5, Name = "Camping Area" }
         );
+        
+        modelBuilder.Entity<PlaceAmenity>().HasData(
+            // Cenote Azul (PlaceId = 1)
+            new PlaceAmenity { PlaceId = 1, AmenityId = 1 }, // Restroom
+            new PlaceAmenity { PlaceId = 1, AmenityId = 2 }, // Parking
+            new PlaceAmenity { PlaceId = 1, AmenityId = 4 }, // Viewpoint
+
+            // Teotihuacan Pyramids (PlaceId = 2)
+            new PlaceAmenity { PlaceId = 2, AmenityId = 1 }, // Restroom
+            new PlaceAmenity { PlaceId = 2, AmenityId = 2 }, // Parking
+            new PlaceAmenity { PlaceId = 2, AmenityId = 3 }, // Restaurant
+
+            // Hierve el Agua (PlaceId = 3)
+            new PlaceAmenity { PlaceId = 3, AmenityId = 1 }, // Restroom
+            new PlaceAmenity { PlaceId = 3, AmenityId = 5 }, // Camping Area
+            new PlaceAmenity { PlaceId = 3, AmenityId = 4 }  // Viewpoint
+        );
     }
 }

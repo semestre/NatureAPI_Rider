@@ -165,3 +165,4 @@ C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-R
 C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI\obj\Debug\net9.0\NatureAPI.pdb
 C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI\obj\Debug\net9.0\NatureAPI.genruntimeconfig.cache
 C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI\obj\Debug\net9.0\ref\NatureAPI.dll
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI\obj\Debug\net9.0\NatureAPI.sourcelink.json
