@@ -1,0 +1,15 @@
+﻿services:
+  natureapi-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: NatureAPI_SQL
+    ports:
+      - 1436:1433   # 👈 use 1436 so it won’t clash with your other container
+    environment:
+      - MSSQL_SA_PASSWORD=Saray12345at1
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+    volumes:
+      - natureapi_sql_data:/var/opt/mssql
+
+volumes:
+  natureapi_sql_data:
