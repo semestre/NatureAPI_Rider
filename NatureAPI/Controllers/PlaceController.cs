@@ -46,7 +46,7 @@ namespace NatureAPI.Controllers
         }
         
         
-        // easy
+        // easy, Moderate
         // nature
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PlaceRDTO>>> GetAllPlaces(
@@ -56,7 +56,7 @@ namespace NatureAPI.Controllers
             // Start with all places
             var query = _context.Place.AsQueryable();
 
-            // Filter by category if provided
+            // Filter by category if provided 
             if (!string.IsNullOrEmpty(category))
                 query = query.Where(p => p.Category == category);
 
