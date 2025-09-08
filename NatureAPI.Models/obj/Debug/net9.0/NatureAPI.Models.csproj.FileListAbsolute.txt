@@ -1,0 +1,11 @@
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\bin\Debug\net9.0\NatureAPI.Models.deps.json
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\bin\Debug\net9.0\NatureAPI.Models.dll
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\bin\Debug\net9.0\NatureAPI.Models.pdb
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.AssemblyInfoInputs.cache
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.AssemblyInfo.cs
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.csproj.CoreCompileInputs.cache
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.dll
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\refint\NatureAPI.Models.dll
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.pdb
+C:\Users\saray\OneDrive - Universidad La Salle Bajío\6th semester\SISTEMASGEO-REFERENCIADOS-fraustro\1st\NatureAPI\NatureAPI.Models\obj\Debug\net9.0\ref\NatureAPI.Models.dll
