@@ -13,4 +13,8 @@ public class PlaceRDTO
     public double EntryFee { get; set; }
     public string OpeningHours { get; set; }
     public DateTime CreatedAt { get; set; }
+    public List<PhotoDTO> Photos { get; set; } = new List<PhotoDTO>();
+    public List<AmenityDTO> Amenities { get; set; } = new List<AmenityDTO>();
+    public List<TrailRDTO> Trails { get; set; } = new List<TrailRDTO>();
+    
 }
