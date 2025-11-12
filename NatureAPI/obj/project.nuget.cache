@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UDjO334PQPE=",
+  "dgSpecHash": "kA751ipwjeM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI\\NatureAPI.csproj",
+  "projectFilePath": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureApi\\NatureAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saray\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\saray\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
