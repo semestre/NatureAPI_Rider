@@ -10,4 +10,4 @@ build/
 *.zip
 *.pdf
 /App/build/
-launchSettings.json
+NatureAPI/Properties/launchSettings.json

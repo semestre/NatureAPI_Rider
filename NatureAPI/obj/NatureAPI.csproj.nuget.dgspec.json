@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureApi\\NatureAPI.csproj": {}
+    "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI\\NatureAPI.csproj": {}
   },
   "projects": {
     "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI.Models\\NatureAPI.Models.csproj": {
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "OpenAI": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureApi\\NatureAPI.csproj": {
+    "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI\\NatureAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureApi\\NatureAPI.csproj",
+        "projectUniqueName": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI\\NatureAPI.csproj",
         "projectName": "NatureAPI",
-        "projectPath": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureApi\\NatureAPI.csproj",
+        "projectPath": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI\\NatureAPI.csproj",
         "packagesPath": "C:\\Users\\saray\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureApi\\obj\\",
+        "outputPath": "C:\\Users\\saray\\OneDrive - Universidad La Salle Bajío\\6th semester\\SISTEMASGEO-REFERENCIADOS-fraustro\\1st\\NatureAPI\\NatureAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saray\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -129,6 +135,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.4, )"
@@ -157,7 +167,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

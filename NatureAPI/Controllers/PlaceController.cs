@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NatureAPI.Models.DTOs;
 using NatureAPI.Models.Entities;
+using OpenAI.Chat;
 
 namespace NatureAPI.Controllers
 {
@@ -11,10 +12,15 @@ namespace NatureAPI.Controllers
     public class PlaceController : ControllerBase
     {
         private readonly NatureDBContext _context;
+        private readonly IConfiguration _config;
 
-        public PlaceController(NatureDBContext context)
+        public PlaceController(
+            NatureDBContext context,
+            IConfiguration config
+            )
         {
             _context = context;
+            _config = config;
         }
 
 
@@ -126,6 +132,7 @@ namespace NatureAPI.Controllers
 
 
         [HttpGet("{id}")]
+            
         public async Task<ActionResult<PlaceRDTO>> GetPlaceById(int id)
         {
             var place = await _context.Place
@@ -175,6 +182,66 @@ namespace NatureAPI.Controllers
 
             return Ok(place);
         }
+        
+        [HttpGet("ai-analyze")]
+        public async Task<ActionResult> AnalyzePlaces()
+        {
+            // 1. Get API Key (make sure you added it in appsettings.json)
+            var openAIKey = HttpContext.RequestServices
+                .GetRequiredService<IConfiguration>()["OpenAIKey"];
+        
+            var client = new ChatClient(
+                model: "gpt-5-mini",
+                apiKey: openAIKey
+            );
+        
+            // 2. Fetch all the data we want AI to analyze
+            var places = await _context.Place
+                .Include(p => p.Trails)
+                .Include(p => p.Photos)
+                .Include(p => p.PlaceAmenities)
+                    .ThenInclude(pa => pa.Amenity)
+                .ToListAsync();
+        
+            var summary = places.Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Description,
+                p.Category,
+                p.Latitude,
+                p.Longitude,
+                p.ElevationMeters,
+                p.Accessible,
+                p.EntryFee,
+                Trails = p.Trails.Select(t => new
+                {
+                    t.Id,
+                    t.Name,
+                    t.DistanceKm,
+                    t.Difficulty,
+                    t.EstimatedTimeMinutes,
+                    t.IsLoop
+                }),
+                Amenities = p.PlaceAmenities.Select(a => a.Amenity.Name),
+                Photos = p.Photos.Select(ph => ph.Url)
+            });
+        
+            var jsonData = System.Text.Json.JsonSerializer.Serialize(summary);
+        
+            // 3. Create prompt using your Prompt generator
+            var prompt = Prompts.GeneratePlacesPrompt(jsonData);
+        
+            // 4. Send to OpenAI
+            var result = await client.CompleteChatAsync([
+                new UserChatMessage(prompt)
+            ]);
+        
+            var response = result.Value.Content[0].Text;
+        
+            return Ok(response);
+        }
+
     }
 }
 
