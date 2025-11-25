@@ -242,7 +242,6 @@ namespace NatureAPI.Controllers
         
             return Ok(response);
         }
-
     }
 }
 
