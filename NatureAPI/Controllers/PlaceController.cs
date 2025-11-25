@@ -183,6 +183,7 @@ namespace NatureAPI.Controllers
             return Ok(place);
         }
         
+        //justs acomit
         [HttpGet("ai-analyze")]
         public async Task<ActionResult> AnalyzePlaces()
         {
